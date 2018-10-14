@@ -146,6 +146,11 @@ body {
   padding: 0 10px;
 
 }
+.breeds_card {
+  display: flex;
+  flex-wrap: wrap; 
+  /*я создала отдельный див, но ничего не получилось(((*/
+}
 /*reviews*/
  
 .review {
@@ -218,10 +223,3 @@ body {
   /*margin: 0 %;*/
  }
 
- @font-face  {
-    font-family: 'Fira Sans';
-    src: url('subset-FiraSans-Medium.woff2') format('woff2'),
-        url('subset-FiraSans-Medium.woff') format('woff'),
-    font-weight: 500;
-    font-style: normal;
- }
