@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira_sans/subset-FiraSans-MediumItalic.woff2') format('woff2'),
+        url('../fonts/fira_sans/subset-FiraSans-MediumItalic.woff') format('woff'),
+        url('../fonts/fira_sans/subset-FiraSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira_sans/subset-FiraSans-Medium.woff2') format('woff2'),
+        url('../fonts/fira_sans/subset-FiraSans-Medium.woff') format('woff'),
+        url('../fonts/fira_sans/subset-FiraSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira_sans/subset-FiraSans-Regular.woff2') format('woff2'),
+        url('../fonts/fira_sans/subset-FiraSans-Regular.woff') format('woff'),
+        url('../fonts/fira_sans/subset-FiraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #ede9e0;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.section_head {
+  margin-left: 30%;
+}
+
+.section_head-about {
+  margin-right: 30%;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  padding: 10px 0;
+}
+
+.header_content {
+  display: flex;
+  align-items: center;
+}
+
+/*NAVIGATION*/
+
+.nav {
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
+.nav_list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around; 
+}
+
+.nav_item {
+
+}
+
+.title {
+
+}
+
+.title_text {
+  padding-left: 5px;
+  border-left: 2px solid #999;
+}
+
+
+/*ABOUT*/
+.about {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: blue;
+}
+
+.about_content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.about_visual {
+  width: 50%;
+  padding: 0 10px;
+}
+
+.about_desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  padding: 0 10px;
+}
+
+.about_img-wrap {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.about_img {
+  display: block;
+  width: 100%;
+}
+
+.about_list {
+  display: flex;
+  flex-wrap: wrap;
+  /*align-self: stretch;*/
+  width: 100%;
+}
+
+ /*breeds*/
+.breeds_list {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.breeds_item{
+  width: 50%;
+  padding: 0 10px;
+
+}
+/*reviews*/
+ 
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.reviews_content {
+  width: 50%;
+  padding: 0 10px;
+}
+
+.review_quote {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.review_photo {
+  width: 50%;
+  padding: 0 10px;
+}
+/*animals*/
+.animals {
+  margin: 100px;
+}
+.animals_content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.animals_main {
+  width: 50%;
+  padding: 0 10px;
+}
+.social {
+  display: flex;
+}
+
+.animals_card {
+  width: 25%;
+  padding: 0 10px;
+  /*margin: -10px;*/
+}
+/*contacts*/
+ .contacts_list {
+
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+ }
+.contacts_item {
+  width: 50%;
+  
+}
+.contacts_text {
+  margin-bottom: 0;
+}
+.contacts_tel-text {
+  margin: 0;
+}
+/*footer*/
+.footer {
+  display: flex;
+  list-style: none
+}
+
+ .footer_link {
+  justify-content: flex-end;
+  /*margin: 0 %;*/
+ }
+
+ @font-face  {
+    font-family: 'Fira Sans';
+    src: url('subset-FiraSans-Medium.woff2') format('woff2'),
+        url('subset-FiraSans-Medium.woff') format('woff'),
+    font-weight: 500;
+    font-style: normal;
+ }
