@@ -27,6 +27,8 @@
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
 }
 
 ul {
@@ -39,13 +41,15 @@ body {
   background-color: #ede9e0;
   font-family: "Fira Sans", sans-serif;
 }
-
+.title {
+  margin-left: 30
+}
 .section_head {
   margin-left: 30%;
 }
 
-.section_head-about {
-  margin-right: 30%;
+.section_header-about {
+  margin-left: 30%;
 }
 
 .container {
@@ -62,6 +66,12 @@ body {
 .header_content {
   display: flex;
   align-items: center;
+}
+.section_head {
+  margin-top: 158px;
+}
+.title_text{
+  margin-bottom: 202px;
 }
 
 /*NAVIGATION*/
@@ -82,6 +92,7 @@ body {
 }
 
 .title {
+  margin-left: 30%;
 
 }
 
@@ -148,10 +159,25 @@ body {
 }
 .breeds_card {
   display: flex;
-  flex-wrap: wrap; 
-  /*я создала отдельный див, но ничего не получилось(((*/
+  /*flex-wrap: wrap; */
+} 
+.breeds_img {
+  width: 140px;
+  min-width: 140px;
+  margin-right: 20px;
 }
-/*reviews*/
+.breeds-photo {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.breeds_blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
  
 .review {
   display: flex;
@@ -173,6 +199,13 @@ body {
   width: 50%;
   padding: 0 10px;
 }
+.reviews_img {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.reviews_comment {
+  padding: 0 10px;
+}
 /*animals*/
 .animals {
   margin: 100px;
@@ -186,6 +219,9 @@ body {
   width: 50%;
   padding: 0 10px;
 }
+/*.animals_title {
+  margin-left: 30%;
+}*/
 .social {
   display: flex;
 }
@@ -196,6 +232,10 @@ body {
   /*margin: -10px;*/
 }
 /*contacts*/
+.contacts_title {
+  margin: 0;
+
+}
  .contacts_list {
 
   display: flex;
@@ -203,23 +243,31 @@ body {
   list-style: none;
  }
 .contacts_item {
-  width: 50%;
-  
+  width: 50%; 
+  margin-top: 20px;
+}
+.contacts_link {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact_tel {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 .contacts_text {
-  margin-bottom: 0;
+  margin: 0; 
 }
+
 .contacts_tel-text {
   margin: 0;
 }
 /*footer*/
-.footer {
+.footer_row {
   display: flex;
-  list-style: none
 }
-
- .footer_link {
-  justify-content: flex-end;
-  /*margin: 0 %;*/
- }
+.nav-footer {
+  display: flex;
+  justify-content: flex-start;
+}
 
