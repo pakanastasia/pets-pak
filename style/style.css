@@ -16,7 +16,7 @@
     font-style: normal;
 }
 
-@font-face {
+@font-face  {
     font-family: 'Fira Sans';
     src: url('../fonts/fira_sans/subset-FiraSans-Regular.woff2') format('woff2'),
         url('../fonts/fira_sans/subset-FiraSans-Regular.woff') format('woff'),
@@ -24,11 +24,52 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face h2 {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/subset-Roboto-Italic.woff2') format('woff2'),
+        url('../fonts/roboto/subset-Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/subset-Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/roboto/subset-Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/subset-Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/roboto/subset-Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/subset-Roboto-MediumItalic.woff2') format('woff2'),
+        url('../fonts/roboto/subset-Roboto-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+
 
 * {
   box-sizing: border-box;
   text-decoration: none;
   margin: 0;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 40px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 40px;
 }
 
 ul {
@@ -67,12 +108,12 @@ body {
   display: flex;
   align-items: center;
 }
-.section_head {
+/*.section_head {
   margin-top: 158px;
-}
-.title_text{
+}*/
+/*.title_text{
   margin-bottom: 202px;
-}
+}*/
 
 /*NAVIGATION*/
 
@@ -87,33 +128,40 @@ body {
   justify-content: space-around; 
 }
 
-.nav_item {
-
-}
-
 .title {
   margin-left: 30%;
-
 }
 
 .title_text {
   padding-left: 5px;
-  border-left: 2px solid #999;
+  border-left: 2px solid #510fad;
+  color: #727173;
+}
+/*promo*/
+
+.promo {
+  padding: 200px 0;
+}
+.promo-title {
+  padding-bottom: 60px;
+  font-size: 48px;
+  line-height: 60px;
 }
 
-
 /*ABOUT*/
+
 .about {
   width: 1024px;
   margin: 0 auto;
   padding: 50px 0;
-  background-color: blue;
+  background-color: #510fad;
 }
 
 .about_content {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -10px;
+  padding-top: 85px;
 }
 
 .about_visual {
@@ -139,32 +187,50 @@ body {
   width: 100%;
 }
 
+.about_text {
+  padding-top: 40px;
+}
 .about_list {
   display: flex;
   flex-wrap: wrap;
   /*align-self: stretch;*/
   width: 100%;
+  padding-left: 20px;
 }
-
+.about_link {
+  padding-top: 130px;
+  }
  /*breeds*/
+.breeds{
+  margin-top: 110px;
+}
+.breeds_title {
+  font-size: 24px;
+}
 .breeds_list {
   display: flex;
   flex-wrap: wrap;
+  /*margin-top: 100px;*/
   
 }
 .breeds_item{
   width: 50%;
   padding: 0 10px;
+  margin: 50px 00;
 
 }
 .breeds_card {
   display: flex;
-  /*flex-wrap: wrap; */
+  margin-top: 20px;
+
 } 
 .breeds_img {
   width: 140px;
   min-width: 140px;
   margin-right: 20px;
+}
+.breeds_link {
+  font-size: 14px;
 }
 .breeds-photo {
   display: block;
@@ -178,16 +244,21 @@ body {
   justify-content: space-between;
 }
 
- 
 .review {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -10px;
+  background-image: url(../img1/“.png);
+  background-repeat: no-repeat;
+}
+.reviews_blog {
+  margin-top: 80px;
 }
 
 .reviews_content {
   width: 50%;
   padding: 0 10px;
+  align-self: center;
 }
 
 .review_quote {
@@ -203,21 +274,32 @@ body {
   border-radius: 5px;
   overflow: hidden;
 }
+.comment {
+  padding-top: 40px;
+}
 .reviews_comment {
   padding: 0 10px;
 }
 /*animals*/
+
 .animals {
-  margin: 100px;
+  margin-top: 210px;
 }
 .animals_content {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -10px;
+  padding: 100px 0;
+  background-color: #510fad;
+  background-image: url(../img1/pattern.png);
 }
 .animals_main {
   width: 50%;
   padding: 0 10px;
+}
+.animals_info {
+  align-self: center; 
+  /*почему не работает?((*/
 }
 /*.animals_title {
   margin-left: 30%;
@@ -225,19 +307,34 @@ body {
 .social {
   display: flex;
 }
-
+/*.social_item {
+  background: url(../img1/sprite.png) no-repeat 0 0;
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+}
+.social_link-bg-yellow { background-position: 0 -30px;  }
+.social_link-bg-yellow: hover { background-position: 0px -60px; }*/
+ /*не получилось со спрайтами(((*/
 .animals_card {
   width: 25%;
   padding: 0 10px;
   /*margin: -10px;*/
+  background-color: #fff;
+  border-radius: 5px
+
+}
+.animals_content-title {
+  padding: 30px 0;
 }
 /*contacts*/
+.contacts {
+  margin: 150px 0;
+}
 .contacts_title {
   margin: 0;
-
 }
  .contacts_list {
-
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -249,16 +346,17 @@ body {
 .contacts_link {
   display: flex;
   flex-wrap: wrap;
+  
 }
+
+
 .contact_tel {
   display: flex;
   flex-wrap: wrap;
-
 }
 .contacts_text {
   margin: 0; 
 }
-
 .contacts_tel-text {
   margin: 0;
 }
@@ -266,8 +364,13 @@ body {
 .footer_row {
   display: flex;
 }
-.nav-footer {
+.nav-footer_list {
   display: flex;
   justify-content: flex-start;
+  list-style: none;
 }
+.nav-footer_item {
+  padding-left: 30px;
+}
+
 
