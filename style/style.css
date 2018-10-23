@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Fira Sans';
+    font-family: 'Fira Sans Italic';
     src: url('../fonts/fira_sans/subset-FiraSans-MediumItalic.woff2') format('woff2'),
         url('../fonts/fira_sans/subset-FiraSans-MediumItalic.woff') format('woff'),
         url('../fonts/fira_sans/subset-FiraSans-MediumItalic.ttf') format('truetype');
@@ -8,24 +8,24 @@
 }
 
 @font-face {
-    font-family: 'Fira Sans';
+    font-family: 'Fira Sans Medium';
     src: url('../fonts/fira_sans/subset-FiraSans-Medium.woff2') format('woff2'),
         url('../fonts/fira_sans/subset-FiraSans-Medium.woff') format('woff'),
         url('../fonts/fira_sans/subset-FiraSans-Medium.ttf') format('truetype');
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face  {
-    font-family: 'Fira Sans';
+    font-family: 'Fira Sans Regular';
     src: url('../fonts/fira_sans/subset-FiraSans-Regular.woff2') format('woff2'),
         url('../fonts/fira_sans/subset-FiraSans-Regular.woff') format('woff'),
         url('../fonts/fira_sans/subset-FiraSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-@font-face h2 {
-    font-family: 'Roboto';
+@font-face {
+    font-family: 'Roboto Italic';
     src: url('../fonts/roboto/subset-Roboto-Italic.woff2') format('woff2'),
         url('../fonts/roboto/subset-Roboto-Italic.woff') format('woff');
     font-weight: normal;
@@ -33,14 +33,14 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto Regular';
     src: url('../fonts/roboto/subset-Roboto-Regular.woff2') format('woff2'),
         url('../fonts/roboto/subset-Roboto-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto Medium';
     src: url('../fonts/roboto/subset-Roboto-Medium.woff2') format('woff2'),
         url('../fonts/roboto/subset-Roboto-Medium.woff') format('woff');
     font-weight: 500;
@@ -67,6 +67,7 @@ h2 {
   font-size: 36px;
   line-height: 40px;
 }
+
 h3 {
   font-size: 24px;
   line-height: 40px;
@@ -78,13 +79,21 @@ ul {
 }
 
 body {
+  display: block;
   margin: 0;
+  width: 100%;
   background-color: #ede9e0;
-  font-family: "Fira Sans", sans-serif;
+  /*font-family: "Fira Sans Regular", sans-serif;*/
+  letter-spacing: 0.50px;
 }
+
+
 .title {
-  margin-left: 30
+  margin-left: 30px;
+ font-family: "Fira Sans Medium", sans-serif;
+  font-weight: 100;
 }
+
 .section_head {
   margin-left: 30%;
 }
@@ -101,7 +110,14 @@ body {
 /* HEADER */
 
 .header {
-  padding: 10px 0;
+
+  font-size: 16px;
+  position: fixed; 
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
 }
 
 .header_content {
@@ -125,36 +141,107 @@ body {
 .nav_list {
   display: flex;
   list-style: none;
-  justify-content: space-around; 
+  justify-content: flex-end; 
+}
+
+.nav_link {
+  color: #202020;
+  margin-left: 30px;
+   font-family: "Roboto Regular", sans-serif;
+}
+
+.nav_link-color:hover {color: #510fad;
+}
+
+
+.phone_item {
+  color: #510fad;
+  font-family: "Roboto Regular", sans-serif;
 }
 
 .title {
   margin-left: 30%;
+
 }
 
 .title_text {
   padding-left: 5px;
   border-left: 2px solid #510fad;
+  font-family: "Roboto Medium", sans-serif;
+  text-transform: uppercase;
   color: #727173;
 }
+
+
+
 /*promo*/
 
 .promo {
-  padding: 200px 0;
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url(../img1/dog.png);
+  background-repeat: no-repeat;
+  padding-top: 150px;
+  padding-bottom: 200px;
 }
+
+/*.promo:after {
+  position: absolute;
+
+}*/
+
 .promo-title {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
+  font-family: "Fira Sans Medium", sans-serif;
+  font-weight: 400;
   font-size: 48px;
   line-height: 60px;
+
 }
 
 /*ABOUT*/
 
 .about {
+  position: relative;
   width: 1024px;
   margin: 0 auto;
   padding: 50px 0;
-  background-color: #510fad;
+  background-color: #5e06b2;
+}
+
+.about:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-image: url(../img1/backround_shape1.png);
+
+}
+
+.about:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 77px;
+  background-image: url(../img1/backround_shape2.png);
+  top: 100%;
+
+
+}
+
+.about_title {
+  font-family: "Fira Sans Medium", sans-serif;
+  font-weight: 100;
+  color: #fff;
+}
+
+.about_text {
+  font-family: "Roboto Regular", sans-serif;
+  color: #b8adc8;
+  font-size: 16px;
 }
 
 .about_content {
@@ -180,6 +267,7 @@ body {
 .about_img-wrap {
   border-radius: 10px;
   overflow: hidden;
+   box-shadow: -5px 0px 50px 0px #000;
 }
 
 .about_img {
@@ -190,187 +278,559 @@ body {
 .about_text {
   padding-top: 40px;
 }
+
 .about_list {
   display: flex;
   flex-wrap: wrap;
   /*align-self: stretch;*/
   width: 100%;
   padding-left: 20px;
+  margin-bottom: 80px;
 }
+
+.about_item {
+  padding-top: 20px;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Roboto Regular", sans-serif;
+}
+
 .about_link {
-  padding-top: 130px;
-  }
- /*breeds*/
-.breeds{
-  margin-top: 110px;
+  display: inline-block;
+  color: #ffec00;
+  font-family: "Fira Sans Medium", sans-serif;
+  letter-spacing: 0.50;
 }
+
+
+.about_link:before {
+  display: inline-block;
+  color: #000;
+
+}
+
+.about_link:hover {
+  color: #b8adc8;
+}
+
+.about_link-gray:after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  background-image: url(../img1/spritesheet.png);
+  margin-left: 5px;
+  background-position: -2px -2px;
+  
+}
+
+.about_link-gray:hover {
+
+  background-position: -26px -2px;
+  
+}
+
+
+
+ /*breeds*/
+
+ .breeds {
+  padding-top: 150px;
+ }
+
 .breeds_title {
   font-size: 24px;
+  font-family: "Fira Sans Medium", sans-serif;
+  font-weight: 100;
 }
+
 .breeds_list {
   display: flex;
   flex-wrap: wrap;
-  /*margin-top: 100px;*/
-  
+  /*margin-top: 100px;*/ 
 }
+
 .breeds_item{
   width: 50%;
-  padding: 0 10px;
-  margin: 50px 00;
-
+  margin: 50px 0;
 }
+
 .breeds_card {
   display: flex;
-  margin-top: 20px;
-
 } 
+
 .breeds_img {
   width: 140px;
   min-width: 140px;
   margin-right: 20px;
 }
-.breeds_link {
-  font-size: 14px;
+
+.breeds_text {
+  color: #737274;
+  font-size: 16px;
+  font-family: "Roboto Regular", sans-serif;
+  line-height: 30px;
+  padding-bottom: 40px;
 }
+
+
+
 .breeds-photo {
   display: block;
   width: 100%;
   border-radius: 50%;
   overflow: hidden;
 }
+
+
+.breeds_link {
+  font-size: 14px;
+  display: inline-block;
+  font-family: "Fira Sans Medium", sans-serif;
+  text-transform: uppercase;
+  color: #510fad;
+}
+
+
+.breeds_link:after {
+  display: inline-block;
+  content: '';
+  width: 20px;
+  height: 14px;
+  margin-left: 5px;
+  background-image: url(../img1/spritesheet.png);
+  background-position: -98px -2px;
+}
+
+.breeds_link:hover {
+  background-position: -122px -2px;
+}
+
+.breeds_link-text:hover {color: #737274} ;
+
+
+
+
 .breeds_blog {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+
+
+
 .review {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 -10px;
+  
+  /*flex-wrap: wrap;*/
+  margin: 0 -20px;
+
+
+  
+}
+
+.reviews_blog {
   background-image: url(../img1/“.png);
   background-repeat: no-repeat;
+
+ 
 }
-.reviews_blog {
-  margin-top: 80px;
+
+.review_name {
+  
+  font-family: "Fira Sans Medium", sans-serif;
+  font-weight: 100;
 }
+
+
 
 .reviews_content {
   width: 50%;
-  padding: 0 10px;
+  padding-top: 50px;
   align-self: center;
 }
 
 .review_quote {
-  margin-left: 0;
-  margin-right: 0;
+  padding-top: 30px;
+  line-height: 30px;
+  font-family: "Roboto Regular", sans-serif;
+  color: #202020;
+}
+
+.review_text {
+  font-family: "Roboto Regular", sans-serif;
+}
+
+.review_time {
+  padding-top: 20px;
+  font-family: "Roboto Italic", sans-serif;
+  color: #737274;
 }
 
 .review_photo {
-  width: 50%;
-  padding: 0 10px;
+  
+  /*padding: 0 10px;*/
 }
+
+.review-card {
+  width: 50%;
+  align-items: center;
+  
+  padding-top: 80px;
+}
+
 .reviews_img {
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: -5px -1px 60px -2px #999;
 }
+
 .comment {
+  font-family: "Roboto Italic", sans-serif;
   padding-top: 40px;
 }
+
 .reviews_comment {
   padding: 0 10px;
+  color: #737274;
+}
+
+.reviews_link {
+  color: #5717af;
+
 }
 /*animals*/
 
-.animals {
-  margin-top: 210px;
-}
-.animals_content {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -10px;
-  padding: 100px 0;
+.container-animals {
+  width: 1024px;
   background-color: #510fad;
   background-image: url(../img1/pattern.png);
 }
+
+.animals {
+  padding-top: 210px;
+
+}
+
+.animals_content {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 940px;
+  margin: 0 auto;
+  padding: 100px 0;
+ 
+}
+
 .animals_main {
-  width: 50%;
+  width: 50%; 
+}
+
+.animals_title {
+  color: #fff;
+  font-family: "Fira Sans Regular", sans-serif;
+  letter-spacing: 0.5px
+}
+
+
+.animal-card {
+  
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 6px 20px -2px #000;
+}
+
+.animal-card:hover {box-shadow: 0px 6px 40px -5px #000;}
+
+.animals_article-img {
+
+}
+
+.animal-card_info {
+
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+margin: 0 auto;
+padding-left: 10px;
+
+
+}
+.animals_card {
+  width: 25%;
   padding: 0 10px;
+
+  /*margin: -10px;*/
+  
+  
 }
+
+.animals_content-title {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-family: "Roboto Regular", sans-serif;
+  color: #202020;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.animals_link {
+  font-family: "Fira Sans Medium", sans-serif;
+  padding-bottom: 20px;
+  color: #5c11c5;
+  vertical-align: middle;
+}
+
+.animals_link-gray:hover {color: #737274;}
+
+.animals_link-gray:after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  margin-left: 5px;
+  align-items: center;
+  background-image: url(../img1/spritesheet.png);
+  background-position: -50px -2px;
+
+
+}
+
+..animals_link-gray:hover {background-position: -74px -2px;}
+
+/*contacts*/
+
+.animals_text {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  font-family: "Roboto Regular", sans-serif;
+  color: #b8adc8;
+  line-height: 30px;
+
+
+}
+
 .animals_info {
-  align-self: center; 
-  /*почему не работает?((*/
+  padding-top: 50px;
 }
+
 /*.animals_title {
   margin-left: 30%;
 }*/
 .social {
   display: flex;
+  padding: 0 -10px;
+  list-style: none;
 }
-/*.social_item {
-  background: url(../img1/sprite.png) no-repeat 0 0;
-  width: 30px;
-  height: 30px;
-  vertical-align: top;
-}
-.social_link-bg-yellow { background-position: 0 -30px;  }
-.social_link-bg-yellow: hover { background-position: 0px -60px; }*/
- /*не получилось со спрайтами(((*/
-.animals_card {
-  width: 25%;
-  padding: 0 10px;
-  /*margin: -10px;*/
-  background-color: #fff;
-  border-radius: 5px
+
+
+
+.social_link {
+  font-size: 0;
 
 }
-.animals_content-title {
-  padding: 30px 0;
+
+.social_link-vk-yellow {
+  display: inline-block;
+  content: '';
+  width: 26px;
+  height: 26px;
+  background-image: url(../img1/spritesheet.png);
+  background-position: -476px -2px;
 }
-/*contacts*/
+
+.social_link-vk-yellow:hover {background-position: -386px -2px;}
+
+.social_link-fb-yellow {
+  display: inline-block;
+  content: '';
+  width: 26px;
+  height: 26px;
+  margin-left: 10px;
+  background-image: url(../img1/spritesheet.png);
+  background-position: -236px -2px;
+}
+
+.social_link-fb-yellow:hover {
+  background-position: -146px -2px;
+} 
+
+.social_link-inst-yellow {
+  display: inline-block;
+  content: '';
+  width: 26px;
+  height: 26px;
+  margin-left: 10px;
+  background-image: url(../img1/spritesheet.png);
+  background-position: -356px -2px;
+}
+
+.social_link-inst-yellow:hover {
+  background-position: -266px -2px;
+}
+
 .contacts {
   margin: 150px 0;
 }
+
+.contacts_content {
+  padding-top: 10px;
+}
+
 .contacts_title {
   margin: 0;
+  font-family: "Fira Sans Medium",sans-serif;
+  font-weight: 100;
 }
+
  .contacts_list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
  }
+
 .contacts_item {
   width: 50%; 
-  margin-top: 20px;
+  padding-top: 40px;
+  font-family: "Fira Sans Medium", sans-serif;
+  font-size: 14px;
+  color: #737274;
+  text-transform: uppercase;
 }
+
+address {
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 16px;
+  color: #202020;
+  text-transform: none;
+  margin-top: 10px;
+}
+
 .contacts_link {
   display: flex;
   flex-wrap: wrap;
-  
+  margin-top: 10px;
 }
 
 
 .contact_tel {
   display: flex;
   flex-wrap: wrap;
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 16px;
+  color: #202020;
+  text-transform: none;
+  margin-top: 10px
 }
+
 .contacts_text {
-  margin: 0; 
+  margin-top: 10px;
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 16px;
+  color: #202020;
+  text-transform: none;
 }
+
 .contacts_tel-text {
-  margin: 0;
+  margin-top: 10px;
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 16px;
+  color: #202020;
+  text-transform: none;
 }
+
+.contacts_link {
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 16px;
+  color: #202020;
+  text-transform: none;
+}
+
 /*footer*/
+
+ .footer {
+  padding-bottom: 90px;
+ }
+
 .footer_row {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-top: 2px solid #d5d1ca;
   display: flex;
+  vertical-align: middle;
 }
+
 .nav-footer_list {
   display: flex;
   justify-content: flex-start;
   list-style: none;
 }
+
 .nav-footer_item {
-  padding-left: 30px;
+  padding-right: 30px;
+
 }
+
+.nav_link-footer {
+  color: #737274;
+}
+
+/*.social_footer {
+  padding: 0;
+}*/
+
+.social_link {
+  font-size: 0;
+  list-style: none;
+  overflow: hidden;
+  margin-left: 5px;
+}
+
+.social_link-vk-gray {
+  content: '';
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-image: url(../img1/spritesheet.png);
+  background-position: -446px -2px;
+}
+
+.social_link-vk-gray:hover {
+  background-position: -416px -2px;
+}
+
+.social_link-fb-gray {
+  content: '';
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-image: url(../img1/spritesheet.png);
+  background-position: -206px -2px;
+}
+
+.social_link-fb-gray:hover {
+  background-position: -176px -2px;
+}
+
+.social_link-inst-gray {
+  content: '';
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-image: url(../img1/spritesheet.png);
+  background-position: -326px -2px;
+}
+
+.social_link-inst-gray:hover {
+  background-position: -296px -2px;
+}
+
+
+
+
 
 

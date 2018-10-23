@@ -1,0 +1,113 @@
+. {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.-arrow_next-about {
+    width: 20px;
+    height: 14px;
+    background-position: -2px -2px;
+}
+
+.-arrow_next-about-hover {
+    width: 20px;
+    height: 14px;
+    background-position: -26px -2px;
+}
+
+.-arrow_next-animal {
+    width: 20px;
+    height: 14px;
+    background-position: -50px -2px;
+}
+
+.-arrow_next-animal-hover {
+    width: 20px;
+    height: 14px;
+    background-position: -74px -2px;
+}
+
+.-arrow_next-breeds {
+    width: 20px;
+    height: 14px;
+    background-position: -98px -2px;
+}
+
+.-arrow_next-breeds-hover {
+    width: 20px;
+    height: 14px;
+    background-position: -122px -2px;
+}
+
+.-fb-social-logotype-copy-animal {
+    width: 26px;
+    height: 26px;
+    background-position: -146px -2px;
+}
+
+.-fb-social-logotype-copy-footer {
+    width: 26px;
+    height: 26px;
+    background-position: -176px -2px;
+}
+
+.-fb-social-logotype-purple {
+    width: 26px;
+    height: 26px;
+    background-position: -206px -2px;
+}
+
+.-fb-social-logotype-yellow {
+    width: 26px;
+    height: 26px;
+    background-position: -236px -2px;
+}
+
+.-insta-social-logotype-copy-animal {
+    width: 26px;
+    height: 26px;
+    background-position: -266px -2px;
+}
+
+.-insta-social-logotype-copy-footer {
+    width: 26px;
+    height: 26px;
+    background-position: -296px -2px;
+}
+
+.-insta-social-logotype-purple {
+    width: 26px;
+    height: 26px;
+    background-position: -326px -2px;
+}
+
+.-insta-social-logotype-yellow {
+    width: 26px;
+    height: 26px;
+    background-position: -356px -2px;
+}
+
+.-vk-social-logotype-copy-animal {
+    width: 26px;
+    height: 26px;
+    background-position: -386px -2px;
+}
+
+.-vk-social-logotype-copy-footer {
+    width: 26px;
+    height: 26px;
+    background-position: -416px -2px;
+}
+
+.-vk-social-logotype-purple {
+    width: 26px;
+    height: 26px;
+    background-position: -446px -2px;
+}
+
+.-vk-social-logotype-yellow {
+    width: 26px;
+    height: 26px;
+    background-position: -476px -2px;
+}
